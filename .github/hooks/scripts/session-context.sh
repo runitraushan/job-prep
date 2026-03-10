@@ -14,14 +14,12 @@ echo "=== Session Context ==="
 if [[ -f "$TRACKER_FILE" ]]; then
   echo ""
   echo "## Active Prep Companies"
-  # Extract table rows (skip header + separator)
-  awk '/^\| Company/,/^---/' "$TRACKER_FILE" | grep -E '^\|' | tail -n +3 | while IFS='|' read -r _ company role analysis questions solutions behavioral status _; do
+  # Extract data rows from Prep Tracker table
+  sed -n '/^| Company/,/^$/p' "$TRACKER_FILE" | grep -E '^\|' | grep -v '^|[-| ]*$' | grep -v '^| Company' | while IFS='|' read -r _ company role _ _ _ _ status _; do
     company="$(echo "$company" | xargs)"
     role="$(echo "$role" | xargs)"
     status="$(echo "$status" | xargs)"
-    if [[ -n "$company" && "$company" != "---" ]]; then
-      echo "- $company ($role) — $status"
-    fi
+    [[ -n "$company" ]] && echo "- $company ($role) — $status"
   done
 fi
 

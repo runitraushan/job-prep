@@ -134,7 +134,7 @@ This workspace supports **any experience level**, not just senior→staff. When 
 
 | Company | Role | Analysis | Questions | Solutions | Behavioral | Status |
 |---|---|---|---|---|---|---|
-| PayPal | Staff SE — Backend | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
+| PayPal | Staff Backend Engineer | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
 
 ---
 
