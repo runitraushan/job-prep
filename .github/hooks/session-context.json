@@ -1,0 +1,8 @@
+{
+  "name": "session-context",
+  "description": "Injects active company prep context at the start of each AI session.",
+  "trigger": "SessionStart",
+  "script": "./scripts/session-context.sh",
+  "portable": true,
+  "notes": "Run this script manually or configure your AI tool to run it at session start. Works with any shell-capable tool (Claude Code, Gemini CLI, Copilot via terminal)."
+}

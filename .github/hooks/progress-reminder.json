@@ -1,0 +1,9 @@
+{
+  "name": "progress-reminder",
+  "description": "Reminds to update the prep tracker after creating a solution file.",
+  "trigger": "PostFileCreate",
+  "pattern": "Companies/*/DSA/*|Companies/*/HLD/*|Companies/*/LLD/*|Companies/*/System-Design/*",
+  "script": "./scripts/progress-reminder.sh",
+  "portable": true,
+  "notes": "Run after creating solution files. Pass the created filepath as argument. Works with any shell-capable tool."
+}

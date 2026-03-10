@@ -1,6 +1,6 @@
 ---
 name: dsa-solution
-description: "Generates a complete DSA solution for interview prep with code, complexity analysis, approach explanation, and edge cases. Use when solving a DSA problem for prep. Follows a standardized format with Java code."
+description: "Generates a complete DSA solution for interview prep with code, complexity analysis, approach explanation, and edge cases. Primarily for coding interview roles (Backend, Full-Stack, DevOps). Uses the role's primary language (default: Java)."
 argument-hint: "Company name and problem (e.g., PayPal Merge Intervals)"
 ---
 
@@ -36,7 +36,7 @@ Follow the **exact structure** from the [sample solution](./examples/sample-solu
 
 ## Rules
 
-- **Java only** for all code
+- **Use the role's primary language** for all code (check the company's analysis doc; default: Java for backend roles)
 - Brute force first → optimized. Interviewers want to see you can improve
 - Complexity analysis is MANDATORY — never skip it
 - Code must be compilable and correct — test it mentally before writing

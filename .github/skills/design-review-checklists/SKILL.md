@@ -1,6 +1,6 @@
 ---
 name: design-review-checklists
-description: "Provides HLD and LLD review checklists for system design interview prep. Use when reviewing a design document for completeness, or while writing a design to self-check coverage. Can be used standalone or by the @design-reviewer agent."
+description: "Provides HLD and LLD review checklists for backend system design (HLD/LLD) interview prep. Use when reviewing a design document for completeness, or while writing a design to self-check coverage. Can be used standalone or by the @design-reviewer agent."
 user-invocable: true
 ---
 

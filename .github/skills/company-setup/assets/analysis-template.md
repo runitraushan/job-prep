@@ -2,7 +2,10 @@
 
 > **Date:** {{DATE}}  
 > **Role:** {{ROLE}}  
-> **Current Level:** Senior Software Engineer (targeting level-up to Staff)  
+> **Role Profile:** {{ROLE_PROFILE}} (see [role-profiles.md](../../.github/skills/company-setup/assets/role-profiles.md))  
+> **Current Level:** {{CURRENT_LEVEL}}  
+> **Target Level:** {{TARGET_LEVEL}}  
+> **Primary Language:** {{PRIMARY_LANGUAGE}}  
 > **Sources:** Job Description, Glassdoor, AmbitionBox, Candidate Reviews  
 
 ---
@@ -12,10 +15,10 @@
 2. [JD Requirements Breakdown](#2-jd-requirements-breakdown)
 3. [Resume vs JD Fit Analysis](#3-resume-vs-jd-fit-analysis)
 4. [Interview Process & Rounds](#4-interview-process--rounds)
-5. [DSA Topics & Patterns](#5-dsa-topics--patterns)
-6. [System Design Topics](#6-system-design-topics)
+5. [Technical Assessment Topics](#5-technical-assessment-topics)
+6. [Design Topics](#6-design-topics)
 7. [Behavioral Focus Areas](#7-behavioral-focus-areas)
-8. [Senior → Staff Level-Up Signals](#8-senior--staff-level-up-signals)
+8. [Level-Up Signals](#8-level-up-signals)
 9. [Prep Strategy & Priority Matrix](#9-prep-strategy--priority-matrix)
 10. [Key Insights from Online Sources](#10-key-insights-from-online-sources)
 11. [Prep Progress Tracker](#11-prep-progress-tracker)
@@ -96,40 +99,57 @@
 
 ---
 
-## 5. DSA Topics & Patterns
+## 5. Technical Assessment Topics
+
+> **Section name and content are role-specific.** Check [role-profiles.md](../../.github/skills/company-setup/assets/role-profiles.md) for what this section should contain for the {{ROLE_PROFILE}} profile.
+>
+> - **Backend:** DSA Topics & Patterns (algorithms, data structures, coding patterns)
+> - **Frontend:** Frontend Coding Topics (DOM, async, closures, component logic)
+> - **Data Science:** ML & Coding Topics (algorithms, statistics, pandas, SQL)
+> - **QA/SDET:** Testing & Coding Topics (automation, test patterns, basic DSA)
+> - **DevOps/SRE:** Scripting & DSA Topics
 
 ### High-Frequency Topics
 
 | Topic | Pattern | Frequency | Example Problems |
 |---|---|---|---|
-| Topic name | Algorithm pattern | 🔴 High / 🟡 Medium | Sample problems |
+| Topic name | Algorithm/coding pattern | 🔴 High / 🟡 Medium | Sample problems |
 
-### Company-Specific Patterns
+### Role-Specific Patterns
 
-- **Pattern 1:** Why it's relevant to {{COMPANY}}'s domain
+- **Pattern 1:** Why it's relevant to {{COMPANY}}'s domain and this role
 - **Pattern 2:** Domain-specific problem type
 
 ---
 
-## 6. System Design Topics
+## 6. Design Topics
 
-### Confirmed (From Interview Reports)
+> **Section name and content are role-specific.** Check [role-profiles.md](../../.github/skills/company-setup/assets/role-profiles.md) for what this section should contain for the {{ROLE_PROFILE}} profile.
+>
+> - **Backend:** System Design Topics (HLD + LLD)
+> - **Frontend:** Frontend Design Topics (component architecture, state management, performance)
+> - **Full-Stack:** Both backend system design + frontend design (weighted by JD)
+> - **Data Science:** ML System Design Topics (pipelines, feature stores, model serving)
+> - **QA/SDET:** Test Architecture Topics (framework design, CI/CD pipeline)
+> - **DevOps/SRE:** Infrastructure Design Topics (cloud architecture, CI/CD, monitoring)
+
+### Confirmed Design Topics (From Interview Reports)
 
 | # | Topic | Source | Difficulty | Key Focus Areas |
 |---|---|---|---|---|
-| 1 | System name | Glassdoor / AmbitionBox | Medium-High | Focus areas |
+| 1 | Design topic | Glassdoor / AmbitionBox | Medium-High | Focus areas |
 
-### Likely (Based on Role & Domain)
+### Likely Design Topics (Based on Role & Domain)
 
 | # | Topic | Why Likely | Key Focus Areas |
 |---|---|---|---|
-| 1 | System name | Relevance to company | Focus areas |
+| 1 | Design topic | Relevance to company | Focus areas |
 
-### LLD Topics
+### Detailed Design Topics (LLD / Component Design / etc.)
 
 | # | Topic | Key Patterns |
 |---|---|---|
-| 1 | Topic | Design patterns involved |
+| 1 | Topic | Patterns involved |
 
 ---
 
@@ -148,17 +168,19 @@
 
 ---
 
-## 8. Senior → Staff Level-Up Signals
+## 8. Level-Up Signals: {{CURRENT_LEVEL}} → {{TARGET_LEVEL}}
 
-**What differentiates Staff from Senior at {{COMPANY}}:**
+> Adapt this section to the candidate's level transition. See [WORKSPACE.md § Level Context](../../WORKSPACE.md#5-level-context) for framing guidance.
+
+**What differentiates {{TARGET_LEVEL}} from {{CURRENT_LEVEL}} at {{COMPANY}}:**
 
 | Signal | What They Look For | How to Demonstrate |
 |---|---|---|
-| Scope | Multi-team / org-wide impact | Your example |
-| Technical Leadership | Driving architecture decisions | Your example |
-| Influence | Leading without authority | Your example |
-| Mentorship | Growing other engineers | Your example |
-| Vision | Long-term technical roadmap | Your example |
+| Scope | Expected scope at {{TARGET_LEVEL}} | Your example |
+| Technical Leadership | Expected leadership at {{TARGET_LEVEL}} | Your example |
+| Influence | Expected influence at {{TARGET_LEVEL}} | Your example |
+| Mentorship | Expected mentorship at {{TARGET_LEVEL}} | Your example |
+| Vision | Expected vision at {{TARGET_LEVEL}} | Your example |
 
 ---
 
@@ -207,7 +229,6 @@
 | System Design Questions Collected | ⬜ Not Started | Use `@interview-researcher` |
 | Behavioral Questions Collected | ⬜ Not Started | Use `@interview-researcher` |
 | DSA Practice (Target: X problems) | ⬜ Not Started | |
-| HLD Solutions (Target: X) | ⬜ Not Started | Use `/hld-solution` |
-| LLD Solutions (Target: X) | ⬜ Not Started | Use `/lld-solution` |
+| Design Solutions (Target: X) | ⬜ Not Started | Use `hld-solution` / `lld-solution` skills |
 | Behavioral Stories (Target: 6-8) | ⬜ Not Started | |
 | Mock Interview | ⬜ Not Started | |

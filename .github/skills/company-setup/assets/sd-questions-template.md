@@ -56,7 +56,9 @@
 
 ## Prep Notes
 
-- **Staff-level expectation:** Lead the conversation, clarify requirements, draw the big picture, dive deep
+> **Scope:** This template covers HLD and LLD design questions. For roles without design rounds (e.g., some QA/junior roles), this file may not be generated. For roles with specialized design (e.g., ML System Design, Component Design), adapt the sections to match the role profile.
+
+- **{{TARGET_LEVEL}}-level expectation:** Lead the conversation, clarify requirements, draw the big picture, dive deep
 - **Domain knowledge:** Company-specific domain concepts to know
 - **Always discuss:** Trade-offs, failure modes, monitoring, scaling bottlenecks
 - **Time management:** 45 min total — 5 min requirements, 5 min high-level, 25 min deep dive, 10 min edge cases

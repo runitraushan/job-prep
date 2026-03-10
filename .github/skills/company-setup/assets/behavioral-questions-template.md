@@ -137,9 +137,9 @@
 
 ---
 
-## "Why Staff?" Narrative Framework
+## "Why {{TARGET_LEVEL}}?" Narrative Framework
 
-Prepare a 2-minute pitch using this structure:
+Prepare a 2-minute pitch using this structure (adapt to {{TARGET_LEVEL}}):
 
 1. **Scope:** "I've led projects spanning X teams / Y services / Z org"
 2. **Impact:** "My work affected [metric] by [number]"

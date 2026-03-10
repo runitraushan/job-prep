@@ -1,5 +1,5 @@
 ---
-description: "Researches and collects specific interview questions for a company from online sources (Glassdoor, LeetCode, Blind, AmbitionBox). Organizes questions into DSA, System-Design, and Behavioral folders. Use after the analysis doc is created."
+description: "Researches and collects specific interview questions for a company from online sources (Glassdoor, LeetCode, Blind, AmbitionBox). Organizes questions into role-appropriate prep folders. Use after the analysis doc is created."
 tools: [read, search, edit, web]
 ---
 
@@ -13,7 +13,11 @@ Ask the user for:
 - **Company name** (e.g., PayPal)
 - **Role** (e.g., Staff Backend Engineer)
 
-Then read the existing analysis doc at `Companies/<Company>/<Company>-*-Analysis.md` to understand what high-level topics are already identified.
+Then read the existing analysis doc at `Companies/<Company>/<Company>-*-Analysis.md` to understand:
+- What high-level topics are already identified
+- The **role profile** (Backend, Frontend, DS/ML, etc.) — this determines which question types and folders to use
+- The **target level** — this determines depth expectations
+- The **primary language** — for coding round notes
 
 ### Step 2: Research Questions
 
@@ -34,50 +38,19 @@ If you can't access most sources, tell the user:
 
 ### Step 3: Organize into Files
 
-Create files in the company's prep folders:
+Create files in the company's prep folders. Use the **role-appropriate templates** from `.github/skills/company-setup/assets/`:
 
-#### DSA Questions → `Companies/<Company>/DSA/`
+- **DSA Questions** → Use [dsa-questions-template.md](../.github/skills/company-setup/assets/dsa-questions-template.md)
+- **System Design Questions** → Use [sd-questions-template.md](../.github/skills/company-setup/assets/sd-questions-template.md)
+- **Behavioral Questions** → Use [behavioral-questions-template.md](../.github/skills/company-setup/assets/behavioral-questions-template.md)
 
-Create `DSA-Questions.md` with this format:
+**Important:** Only create question files for round types that exist in the role's interview process. For example:
+- Backend roles: DSA, System Design (HLD + LLD), Behavioral
+- Frontend roles: DSA, Component Design, Behavioral
+- DS/ML roles: ML Algorithms, ML System Design, Behavioral
+- QA/SDET roles: Test Design, Automation Architecture, Behavioral
 
-```markdown
-# <Company> — DSA Questions
-
-> Sources: [list sources used]
-> Last Updated: [date]
-
-## Questions
-
-### 1. <Problem Name>
-- **Difficulty:** Easy / Medium / Hard
-- **Topics:** Arrays, Sliding Window, etc.
-- **Source:** Glassdoor Jan 2026 / LeetCode / Training Knowledge
-- **LeetCode Link:** [if applicable]
-- **Notes:** Any context about how it was asked
-
-### 2. <Problem Name>
-...
-```
-
-If there are enough Machine Coding questions (3+), create a separate `Machine-Coding-Questions.md`. Otherwise, add a "Machine Coding" section at the end of DSA-Questions.md.
-
-#### System Design Questions → `Companies/<Company>/System-Design/`
-
-Create `SD-Questions.md` with this format:
-
-```markdown
-# <Company> — System Design Questions
-
-> Sources: [list sources used]
-> Last Updated: [date]
-
-## HLD Questions
-
-### 1. <Design Problem>
-- **Type:** HLD
-- **Source:** Glassdoor Apr 2025 / Training Knowledge
-- **Key Focus Areas:** What interviewers probe on
-- **Notes:** Any context
+Check the analysis doc's interview rounds section to determine which files to create.
 
 ## LLD Questions
 
@@ -118,15 +91,15 @@ After creating the files, give the user a summary:
 ```
 Research Complete for <Company> — <Role>
 
+🎯 Role Profile: <detected profile> | Level: <current> → <target>
+
 📊 Sources Used:
 - Glassdoor: ✅ Fetched / ❌ Used training knowledge
 - LeetCode: ✅ / ❌
 - ...
 
 📁 Files Created:
-- DSA/DSA-Questions.md (X questions)
-- System-Design/SD-Questions.md (X HLD + X LLD)
-- Behavioral/Behavioral-Questions.md (X questions across Y categories)
+- <list of files created, based on role-appropriate rounds>
 
 ⚠️ Accuracy Note: [mention if mostly training knowledge]
 ```

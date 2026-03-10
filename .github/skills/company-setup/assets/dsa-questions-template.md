@@ -54,5 +54,5 @@
 
 - **Round format:** Online assessment / Live coding / Pair programming / Whiteboard
 - **Time budget:** X minutes for Y problems
-- **Language:** Java (primary)
+- **Language:** {{PRIMARY_LANGUAGE}}
 - **Key tips specific to this company's coding rounds**
