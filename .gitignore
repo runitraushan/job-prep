@@ -3,6 +3,9 @@ node_modules/
 # OS files
 .DS_Store
 
+# Temp files
+.tmp/
+
 # User-specific prep data (local only)
 Companies/
 Resume/
