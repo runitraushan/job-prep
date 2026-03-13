@@ -1,1 +1,8 @@
 node_modules/
+
+# OS files
+.DS_Store
+
+# User-specific prep data (local only)
+Companies/
+Resume/
