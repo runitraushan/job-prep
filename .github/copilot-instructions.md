@@ -23,12 +23,15 @@
 
 ## 2. Copilot-Specific Guidelines
 
+### Auto-Routing (MANDATORY)
+On every user message, **check [WORKSPACE.md § 4 — Auto-Routing](../WORKSPACE.md#4-auto-routing--skills--agents)** to detect if the request matches a skill or agent. If it does, read the skill's `SKILL.md` or invoke the agent — the user should never need to type `@agent` or `/command`.
+
 ### Mode Recommendations
 - **Plan mode** for strategizing, research, and analysis
 - **Agent mode** for execution, file creation, and multi-step tasks
 
-### VS Code Slash Commands (Thin Wrappers)
-These prompts delegate to portable skills:
+### VS Code Slash Commands (Optional shortcuts)
+These are optional convenience shortcuts — auto-routing handles everything even without them:
 - `/new-company-prep` → uses `company-setup` skill
 - `/hld-solution` → uses `hld-solution` skill
 - `/lld-solution` → uses `lld-solution` skill

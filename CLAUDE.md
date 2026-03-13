@@ -27,6 +27,7 @@ Base resume: `Runit_Kumar_Raushan_Resume_Improved.md` at workspace root (never m
 
 ## Key Rules
 
+- **Auto-route every prompt**: Before responding, check [WORKSPACE.md § 4 — Auto-Routing](./WORKSPACE.md#4-auto-routing--skills--agents). If the user's intent matches a skill or agent, read its `SKILL.md` / `.agent.md` and follow it. Users never need to type `@agent` or skill names.
 - Follow [WORKSPACE.md](./WORKSPACE.md) § Behavior Guidelines
 - Use the role's primary language (default: Java for backend)
 - Always check the company's analysis doc for role-specific context before generating content
