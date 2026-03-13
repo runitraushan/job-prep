@@ -18,7 +18,7 @@ Generate a comprehensive, interview-ready Low-Level Design (LLD) solution. The s
 
 ## Output
 
-Create the solution file at: `Companies/<CompanyName>/LLD/LLD-<ProblemName>.md`
+Create the solution file at: `Companies/<CompanyName>/LLD/Solutions/LLD-<ProblemName>.md`
 Use kebab-case for the filename (e.g., `LLD-Parking-Lot.md`, `LLD-Elevator-System.md`).
 
 ## Solution Format

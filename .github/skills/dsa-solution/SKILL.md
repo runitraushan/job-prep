@@ -18,14 +18,14 @@ Generate a complete, interview-ready DSA solution for a given problem. The solut
 
 ## Output
 
-Create the solution file at: `Companies/<CompanyName>/DSA/<ProblemName>.md`
+Create the solution file at: `Companies/<CompanyName>/DSA/Solutions/<ProblemName>.md`
 Use kebab-case for the filename (e.g., `Merge-Intervals.md`, `LRU-Cache.md`).
 
 ## Solution Format
 
 Follow the **exact structure** from the [sample solution](./examples/sample-solution.md). Every solution MUST include these sections in order:
 
-1. **Problem Statement** — Concise description + constraints + examples
+1. **Problem Statement** — Concise description + constraints + examples. Include a `**LeetCode:**` line with direct link if the problem maps to a LeetCode problem (e.g., `[#56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)`). If only a similar problem exists, note it as `Similar: [#Number. Name](url)`.
 2. **Approach** — Brute force first, then optimized. Explain the intuition. Why does this approach work?
 3. **Complexity Analysis** — Time AND space for each approach. Use the [complexity cheatsheet](./references/complexity-cheatsheet.md) for common patterns
 4. **Java Code** — Clean, compilable, interview-ready. Include comments for non-obvious logic only

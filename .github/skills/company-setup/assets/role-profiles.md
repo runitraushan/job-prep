@@ -28,7 +28,6 @@ If the JD doesn't fit neatly into one profile (e.g., "Backend-heavy Full-Stack")
 | Technical Coding | DSA / Live Coding | Almost always |
 | System Design — HLD | Distributed systems | Senior+ |
 | System Design — LLD | OOP / Class design | Senior+ |
-| Machine Coding | Timed implementation | Some companies |
 | Behavioral | STAR format | Almost always |
 | Hiring Manager | Culture fit, career | Common |
 
@@ -36,11 +35,18 @@ If the JD doesn't fit neatly into one profile (e.g., "Backend-heavy Full-Stack")
 ```
 Companies/{{COMPANY}}/
 ├── DSA/
+│   ├── Solutions/
+│   └── Practice/
 ├── HLD/
+│   ├── Solutions/
+│   └── Practice/
 ├── LLD/
-├── Machine-Coding/
+│   ├── Solutions/
+│   └── Practice/
 └── Behavioral/
 ```
+
+> **Convention:** Questions files (`*-Questions.md`) stay at the folder root. Skill-generated reference solutions go in `Solutions/`. Self-written practice answers go in `Practice/`.
 
 ### Primary Language
 Java
@@ -62,7 +68,8 @@ Java
 
 ### Question Templates
 - DSA → [dsa-questions-template.md](./dsa-questions-template.md)
-- System Design → [sd-questions-template.md](./sd-questions-template.md)
+- HLD → [hld-questions-template.md](./hld-questions-template.md)
+- LLD → [lld-questions-template.md](./lld-questions-template.md)
 - Behavioral → [behavioral-questions-template.md](./behavioral-questions-template.md)
 
 ### Skills / Prompts Available

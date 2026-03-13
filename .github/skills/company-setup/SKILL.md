@@ -37,7 +37,11 @@ Companies/{{COMPANY}}/
 └── <folders from role profile>
 ```
 
-For example, a Backend role creates `DSA/`, `HLD/`, `LLD/`, `Machine-Coding/`, `Behavioral/`, while a Frontend role creates `DSA/`, `Component-Design/`, `Behavioral/`.
+For example, a Backend role creates `DSA/`, `HLD/`, `LLD/`, `Behavioral/`, while a Frontend role creates `DSA/`, `Component-Design/`, `Behavioral/`.
+
+For folders that hold solutions (DSA, HLD, LLD, and role equivalents), also create `Solutions/` and `Practice/` subfolders inside each:
+- `Solutions/` — for skill-generated reference solutions
+- `Practice/` — for self-written practice answers (used by `@design-coach`)
 
 ### Step 2: Ask for JD
 
@@ -48,13 +52,20 @@ Ask the user to place the Job Description file inside the company folder as:
 
 ### Step 3: Resume vs JD Analysis
 
-Read the candidate's resume (check `WORKSPACE.md` for the configured resume path, default: `Runit_Kumar_Raushan_Resume_Improved.md`) and the JD file. Compare them to identify:
+Read the candidate's **base resume** from the workspace root (check `WORKSPACE.md` for the configured path, default: `Runit_Kumar_Raushan_Resume_Improved.md`) and the JD file. Compare them to identify:
 - **Strong Synergies** — skills/experience that directly match JD requirements
 - **High-Risk Gaps** — critical requirements missing from resume
 - **Medium-Risk Gaps** — nice-to-have requirements not covered
 - **Narrative Angles** — how to frame experience to cover gaps
 
 This analysis becomes Section 3 of the analysis doc.
+
+### Step 3.5: Create Company-Specific Resume
+
+Copy the base resume into the company folder as:
+`Companies/{{COMPANY}}/Resume-{{COMPANY}}.md`
+
+This is the company-specific version that can be tailored based on the gap analysis. The base resume at the workspace root is **never modified** — it stays as the canonical source.
 
 ### Step 4: Create Analysis Doc
 
@@ -75,10 +86,22 @@ Update the Prep Tracker table in `WORKSPACE.md` (Section 8) by adding a new row:
 
 ### Step 6: Remind About Next Steps
 
-After creating the analysis doc, remind the user:
-- Use `@interview-researcher` agent to collect specific interview questions into the role-appropriate folders
-- The agent will use standardized templates from this skill: [DSA template](./assets/dsa-questions-template.md), [SD template](./assets/sd-questions-template.md), [Behavioral template](./assets/behavioral-questions-template.md)
-- Use the **hld-solution**, **lld-solution**, or **dsa-solution** skills to generate practice solutions
+After creating the analysis doc, tell the user what's available next:
+
+> **What we just completed:**
+> - ✅ Folder structure created (role-specific)
+> - ✅ Analysis doc generated with JD breakdown, gap analysis, and prep strategy
+> - ✅ Company-specific resume copied (ready for tailoring)
+>
+> **Recommended next step:**
+> - 📝 **Tailor your resume** — Use the `resume-tailor` skill to get targeted resume improvement suggestions based on the gap analysis. This can make the difference between selection and rejection.
+>
+> **Other available actions:**
+> - Use `@interview-researcher` to collect specific interview questions into the prep folders
+> - Use `/hld-solution`, `/lld-solution`, or `/dsa-solution` to practice design and coding problems
+> - Review the Prep Strategy (Section 9) for your recommended timeline
+>
+> *Would you like to tailor your resume for {{COMPANY}} now?*
 
 ## Rules
 

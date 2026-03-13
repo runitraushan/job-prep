@@ -56,7 +56,10 @@
 
 ## 3. Resume vs JD Fit Analysis
 
-> **Source:** Comparison of resume against JD
+> **Source:** Comparison of base resume against JD
+>
+> **Base Resume:** `../../<resume-filename>` (workspace root)
+> **Company-Specific Resume:** `Resume-{{COMPANY}}.md` (this folder — tailored post-analysis)
 
 ### Strong Synergies (Resume → JD Direct Match)
 

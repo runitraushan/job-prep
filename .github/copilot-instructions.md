@@ -47,7 +47,8 @@ See [WORKSPACE.md § Prep Tracker](../WORKSPACE.md#8-prep-tracker) for the unifi
 
 ## 4. Resume
 
-Primary resume: `Runit_Kumar_Raushan_Resume_Improved.md` (root of workspace)
+Base resume: `Runit_Kumar_Raushan_Resume_Improved.md` (root of workspace) — used for initial analysis, never modified by skills.
+Company-specific resumes: `Companies/<Company>/Resume-<Company>.md` — tailored versions created during company setup.
 
 ---
 

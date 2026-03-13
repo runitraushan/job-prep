@@ -11,7 +11,7 @@
 - **Difficulty:** Easy / Medium / Hard
 - **Topics:** Topic1, Topic2, Topic3
 - **Source:** Glassdoor / AmbitionBox / LeetCode Discuss (specify if fetched or training knowledge)
-- **LeetCode:** [Problem Number. Problem Name](https://leetcode.com/problems/problem-slug/)
+- **LeetCode:** [#Number. Problem Name](https://leetcode.com/problems/problem-slug/) — if exact match not found, use `Similar: [#Number. Name](url) — how it differs` or `Not on LeetCode. See: [Platform](url)`
 - **Notes:** Context — when it's asked, what variation, interviewer expectations
 
 ### 2. Problem Name

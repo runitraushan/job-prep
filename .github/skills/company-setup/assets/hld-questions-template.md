@@ -1,13 +1,11 @@
-# {{COMPANY}} — System Design Questions ({{ROLE}})
+# {{COMPANY}} — HLD Questions ({{ROLE}})
 
 > **Sources:** List sources actually fetched vs training knowledge  
 > **Last Updated:** {{DATE}}
 
 ---
 
-## HLD Questions
-
-### Confirmed (From Interview Reports)
+## Confirmed (From Interview Reports)
 
 #### 1. Design a [System Name]
 - **Source:** Glassdoor / AmbitionBox (specify if fetched or training knowledge)
@@ -25,7 +23,7 @@
 
 <!-- Repeat for each confirmed question -->
 
-### Likely (Based on Role & Domain)
+## Likely (Based on Role & Domain)
 
 #### N. Design a [System Name]
 - **Source:** Analysis Doc / Domain inference
@@ -38,25 +36,13 @@
 
 ---
 
-## LLD Questions
+## Detailed Preparation Notes
 
-### 1. Design a [Component Name]
-- **Scope:** What to model — code-level design
-- **Key Topics:** Core OOP / design pattern concepts
-- **Patterns:** Design patterns involved (State, Strategy, Observer, etc.)
-
-### 2. Design a [Component Name]
-- **Scope:** 
-- **Key Topics:** 
-- **Patterns:** 
-
-<!-- Repeat for each LLD question -->
+> For the top 3-4 must-prepare topics, add deeper notes: requirements to cover, key architecture components, critical topics to discuss, etc.
 
 ---
 
 ## Prep Notes
-
-> **Scope:** This template covers HLD and LLD design questions. For roles without design rounds (e.g., some QA/junior roles), this file may not be generated. For roles with specialized design (e.g., ML System Design, Component Design), adapt the sections to match the role profile.
 
 - **{{TARGET_LEVEL}}-level expectation:** Lead the conversation, clarify requirements, draw the big picture, dive deep
 - **Domain knowledge:** Company-specific domain concepts to know

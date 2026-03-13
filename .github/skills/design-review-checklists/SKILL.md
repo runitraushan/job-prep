@@ -25,13 +25,21 @@ The `@design-reviewer` agent references these checklists automatically when revi
 
 ## Review Output Format
 
-When using these checklists to review a document, produce:
+The `@design-reviewer` agent supports two review modes:
 
-### Section Coverage
+### Structured Mode (Template-generated solutions)
+When the document has clear section headings matching the checklist. Checks each section by heading.
 
-| Section | Present? | Completeness (1-5) | Notes |
+### Free-Form Mode (Your own practice answers)
+When you wrote the answer yourself — paragraphs, rough notes, bullet points, any format. The reviewer scans the entire text for **concepts**, not headings. It tells you which checklist topics you covered, which you mentioned briefly, and which you missed entirely — like an interviewer would.
+
+The agent auto-detects the mode, or you can explicitly say "review in free-form mode".
+
+### Output (both modes)
+
+| Section/Topic | Present? | Completeness (1-5) | Notes |
 |---------|----------|---------------------|-------|
-| Section name | ✅/❌ | ⭐ rating | Specific feedback |
+| Section name | ✅/🟡/❌ | ⭐ rating | Specific feedback |
 
 ### Critical Gaps (Interviewer would notice)
 - Sections that are missing or very weak

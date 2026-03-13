@@ -7,6 +7,7 @@
 All reusable skills are in `.github/skills/`. Each skill has a `SKILL.md` with instructions and bundled assets:
 
 - `company-setup` — scaffold prep workspace for a new company
+- `resume-tailor` — tailor company-specific resume based on gap analysis
 - `dsa-solution` — generate DSA solution (backend roles, Java)
 - `hld-solution` — generate HLD / system design solution (backend/full-stack)
 - `lld-solution` — generate LLD / OOP design solution (backend/full-stack)
@@ -17,11 +18,12 @@ All reusable skills are in `.github/skills/`. Each skill has a `SKILL.md` with i
 Agent definitions are in `.github/agents/`:
 
 - `design-reviewer` — read-only design doc reviewer
+- `design-coach` — interactive section-by-section HLD/LLD practice with instant feedback
 - `interview-researcher` — researches interview questions from online sources
 
 ## Default Candidate
 
-See `Runit_Kumar_Raushan_Resume_Improved.md` at workspace root. Each company's analysis doc specifies the actual role, level, and stack.
+Base resume: `Runit_Kumar_Raushan_Resume_Improved.md` at workspace root (never modified by skills). Company-specific tailored resumes live at `Companies/<Company>/Resume-<Company>.md`. Each company's analysis doc specifies the actual role, level, and stack.
 
 ## Key Rules
 

@@ -17,11 +17,12 @@ Job Prep 2026/
 ├── WORKSPACE.md                              # This file — shared AI context
 ├── CLAUDE.md                                 # Claude Code context (references this file)
 ├── .github/copilot-instructions.md           # VS Code Copilot context (references this file)
-├── Runit_Kumar_Raushan_Resume_Improved.md    # Default resume (override per user)
+├── Runit_Kumar_Raushan_Resume_Improved.md    # Base resume (never modified by skills)
 ├── Companies/
 │   └── <CompanyName>/
 │       ├── <CompanyName>-<Role>-JD.md        # Job Description (user provides)
 │       ├── <CompanyName>-<Role>-Analysis.md  # Generated analysis doc
+│       ├── Resume-<CompanyName>.md           # Company-specific resume (tailored from base)
 │       └── <role-specific folders>/          # Determined by role profile (see below)
 ├── .github/
 │   ├── skills/          # Portable skills (agentskills.io standard)
@@ -47,7 +48,7 @@ Folders inside each company directory are **determined by the role profile** —
 
 | Role Type | Typical Folders |
 |-----------|----------------|
-| Backend | `DSA/`, `HLD/`, `LLD/`, `Machine-Coding/`, `Behavioral/` |
+| Backend | `DSA/`, `HLD/`, `LLD/`, `Behavioral/` — each with `Solutions/` and `Practice/` subfolders |
 | Frontend | `DSA/`, `Component-Design/`, `Behavioral/` |
 | Full-Stack | JD-driven — mix of Backend + Frontend folders |
 | Data Science / ML | `ML-Algorithms/`, `ML-System-Design/`, `Behavioral/` |
@@ -116,6 +117,7 @@ This workspace supports **any experience level**, not just senior→staff. When 
 | Skill | Purpose | Scope |
 |-------|---------|-------|
 | `company-setup` | Scaffold prep workspace for a new company | All roles |
+| `resume-tailor` | Tailor company-specific resume based on gap analysis | All roles |
 | `dsa-solution` | Generate DSA solution with code + analysis | Backend roles |
 | `hld-solution` | Generate HLD / system design solution | Backend / Full-Stack |
 | `lld-solution` | Generate LLD / OOP design solution | Backend / Full-Stack |
@@ -126,6 +128,7 @@ This workspace supports **any experience level**, not just senior→staff. When 
 | Agent | Purpose | Tools |
 |-------|---------|-------|
 | `@design-reviewer` | Reviews design docs for completeness (read-only) | read, search |
+| `@design-coach` | Interactive section-by-section HLD/LLD practice with instant feedback | read, search, edit |
 | `@interview-researcher` | Researches interview questions from online sources | read, search, edit, web |
 
 ---
@@ -135,6 +138,8 @@ This workspace supports **any experience level**, not just senior→staff. When 
 | Company | Role | Analysis | Questions | Solutions | Behavioral | Status |
 |---|---|---|---|---|---|---|
 | PayPal | Staff Backend Engineer | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
+| Airbnb | Senior SE, Payments | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
+| Soft Suave | AIML Engineer | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
 
 ---
 

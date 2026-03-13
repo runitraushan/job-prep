@@ -18,7 +18,7 @@ Generate a comprehensive, interview-ready High-Level Design (HLD) / System Desig
 
 ## Output
 
-Create the solution file at: `Companies/<CompanyName>/HLD/HLD-<ProblemName>.md`
+Create the solution file at: `Companies/<CompanyName>/HLD/Solutions/HLD-<ProblemName>.md`
 Use kebab-case for the filename (e.g., `HLD-URL-Shortener.md`, `HLD-Payment-Gateway.md`).
 
 ## Solution Format

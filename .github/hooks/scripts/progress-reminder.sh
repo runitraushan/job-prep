@@ -14,7 +14,7 @@ if [[ -z "$FILE" ]]; then
 fi
 
 # Check if the file is a solution file (in DSA/, HLD/, LLD/, System-Design/, etc.)
-SOLUTION_PATTERNS="DSA/|HLD/|LLD/|System-Design/|Machine-Coding/|ML-Algorithms/|ML-System-Design/|Component-Design/|Test-Design/|Infrastructure-Design/"
+SOLUTION_PATTERNS="DSA/|HLD/|LLD/|System-Design/|ML-Algorithms/|ML-System-Design/|Component-Design/|Test-Design/|Infrastructure-Design/"
 
 if echo "$FILE" | grep -qE "$SOLUTION_PATTERNS"; then
   # Extract company name from path

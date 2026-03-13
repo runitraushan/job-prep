@@ -97,7 +97,7 @@ agent: "agent"
 
 Create a new company prep folder under Companies/ with:
 - Analysis doc template
-- DSA, System-Design, LLD, HLD, Behavioral, Machine-Coding subfolders
+- DSA, HLD, LLD, Behavioral subfolders
 ```
 
 **Key fields:**

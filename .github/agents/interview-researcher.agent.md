@@ -36,19 +36,40 @@ For each source:
 If you can't access most sources, tell the user:
 > "I couldn't fetch live data from most sources. I'm using training knowledge instead. For the most accurate results, you could paste Glassdoor/LeetCode data here and I'll organize it."
 
+### Step 2.5: LeetCode Problem Linking (DSA Questions)
+
+For **every DSA question**, you MUST find and include the corresponding LeetCode problem reference. Follow these priority rules:
+
+1. **Exact match (preferred):** Find the LeetCode problem number and provide a direct link.
+   - Format: `[#123. Two Sum](https://leetcode.com/problems/two-sum/)`
+   - The link format is always: `https://leetcode.com/problems/<slug>/` where slug is the problem name in lowercase with hyphens.
+
+2. **Similar problem (if exact match not found):** Find the closest LeetCode problem and mark it clearly.
+   - Format: `Similar: [#456. Problem Name](https://leetcode.com/problems/slug/) — <brief explanation of how it differs>`
+
+3. **Other platforms (last resort):** If the problem is genuinely not on LeetCode (rare), provide links to other platforms.
+   - Format: `Not on LeetCode. See: [GeeksforGeeks](url) or [HackerRank](url)`
+
+**Over 95% of interview DSA questions map to LeetCode problems.** Always search thoroughly before marking something as "not on LeetCode".
+
+**LeetCode URL construction:** If you know the problem name, the slug is typically the name in lowercase with spaces replaced by hyphens. Example: "Longest Substring Without Repeating Characters" → `longest-substring-without-repeating-characters`.
+
 ### Step 3: Organize into Files
 
 Create files in the company's prep folders. Use the **role-appropriate templates** from `.github/skills/company-setup/assets/`:
 
-- **DSA Questions** → Use [dsa-questions-template.md](../.github/skills/company-setup/assets/dsa-questions-template.md)
-- **System Design Questions** → Use [sd-questions-template.md](../.github/skills/company-setup/assets/sd-questions-template.md)
-- **Behavioral Questions** → Use [behavioral-questions-template.md](../.github/skills/company-setup/assets/behavioral-questions-template.md)
+- **DSA Questions** → `Companies/<Company>/DSA/DSA-Questions.md` — Use [dsa-questions-template.md](../.github/skills/company-setup/assets/dsa-questions-template.md)
+- **HLD Questions** → `Companies/<Company>/HLD/HLD-Questions.md` — Use [hld-questions-template.md](../.github/skills/company-setup/assets/hld-questions-template.md)
+- **LLD Questions** → `Companies/<Company>/LLD/LLD-Questions.md` — Use [lld-questions-template.md](../.github/skills/company-setup/assets/lld-questions-template.md)
+- **Behavioral Questions** → `Companies/<Company>/Behavioral/Behavioral-Questions.md` — Use [behavioral-questions-template.md](../.github/skills/company-setup/assets/behavioral-questions-template.md)
 
-**Important:** Only create question files for round types that exist in the role's interview process. For example:
-- Backend roles: DSA, System Design (HLD + LLD), Behavioral
-- Frontend roles: DSA, Component Design, Behavioral
-- DS/ML roles: ML Algorithms, ML System Design, Behavioral
-- QA/SDET roles: Test Design, Automation Architecture, Behavioral
+**Important:** 
+- **HLD and LLD questions go in separate files in separate folders.** Never combine them into one file.
+- Only create question files for round types that exist in the role's interview process. For example:
+  - Backend roles: DSA, HLD, LLD, Behavioral
+  - Frontend roles: DSA, Component Design, Behavioral
+  - DS/ML roles: ML Algorithms, ML System Design, Behavioral
+  - QA/SDET roles: Test Design, Automation Architecture, Behavioral
 
 Check the analysis doc's interview rounds section to determine which files to create.
 
