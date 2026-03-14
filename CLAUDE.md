@@ -23,7 +23,7 @@ Agent definitions are in `.github/agents/`:
 
 ## Default Candidate
 
-Base resume: `Runit_Kumar_Raushan_Resume_Improved.md` at workspace root (never modified by skills). Company-specific tailored resumes live at `Companies/<Company>/Resume-<Company>.md`. Each company's analysis doc specifies the actual role, level, and stack.
+Base resume: `Resume/<YourName>_Resume.md` (in `Resume/` folder — never modified by skills). Company-specific tailored resumes live at `Companies/<Company>/Resume-<Company>.md`. Each company's analysis doc specifies the actual role, level, and stack.
 
 ## Key Rules
 

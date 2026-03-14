@@ -17,7 +17,8 @@ Job Prep 2026/
 ├── WORKSPACE.md                              # This file — shared AI context
 ├── CLAUDE.md                                 # Claude Code context (references this file)
 ├── .github/copilot-instructions.md           # VS Code Copilot context (references this file)
-├── Runit_Kumar_Raushan_Resume_Improved.md    # Base resume (never modified by skills)
+├── Resume/
+│   └── <YourName>_Resume.md                  # Base resume (never modified by skills)
 ├── Companies/
 │   └── <CompanyName>/
 │       ├── <CompanyName>-<Role>-JD.md        # Job Description (user provides)
@@ -177,10 +178,8 @@ This workspace supports **any experience level**, not just senior→staff. When 
 
 | Company | Role | Analysis | Questions | Solutions | Behavioral | Status |
 |---|---|---|---|---|---|---|
-| PayPal | Staff Backend Engineer | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
-| Airbnb | Senior SE, Payments | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
-| Soft Suave | AIML Engineer | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
+| _(Add companies here as you set them up)_ | — | — | — | — | — | — |
 
 ---
 
-_Last Updated: 11 March 2026_
+_Last Updated: 14 March 2026_

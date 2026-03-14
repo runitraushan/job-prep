@@ -31,7 +31,8 @@ Job Prep 2026/
 ├── README.md                          # You are here
 ├── WORKSPACE.md                       # Shared AI context — single source of truth
 ├── CLAUDE.md                          # Claude Code specific instructions
-├── <Base-Resume>.md                   # Your base resume (never modified by skills)
+├── Resume/
+│   └── <YourName>_Resume.md           # Your base resume (never modified by skills)
 │
 ├── Companies/
 │   └── <CompanyName>/
@@ -54,7 +55,7 @@ Job Prep 2026/
 ### Prerequisites
 
 - **VS Code** with GitHub Copilot (Chat + Agents)
-- A resume in markdown format at the workspace root
+- A resume in markdown format placed at `Resume/<YourName>_Resume.md`
 - A job description (text or markdown) for your target company
 
 ### 1. Set Up a New Company
@@ -175,10 +176,11 @@ Run manually: `bash .github/hooks/scripts/session-context.sh`
 
 This framework isn't locked to one person. To use it for a different candidate:
 
-1. Place your resume (markdown) at the workspace root
-2. When running `company-setup`, provide your role details — the skill will ask
-3. Each company's analysis doc stores the specific candidate profile, role, and level
-4. The default profile in `.github/copilot-instructions.md` is just a starting point — company-level docs override it
+1. Place your resume (markdown) at `Resume/<YourName>_Resume.md`
+2. Update the candidate profile table in `.github/copilot-instructions.md` § 1 with your details (name, role, stack, resume path)
+3. When running `company-setup`, provide your role details — the skill will ask
+4. Each company's analysis doc stores the specific candidate profile, role, and level
+5. The default profile in `.github/copilot-instructions.md` is just a starting point — company-level docs override it
 
 ## Prep Tracker
 
@@ -186,9 +188,7 @@ Track progress across all companies in [WORKSPACE.md](WORKSPACE.md#8-prep-tracke
 
 | Company | Role | Analysis | Questions | Solutions | Behavioral | Status |
 |---------|------|----------|-----------|-----------|------------|--------|
-| PayPal | Staff Backend Engineer | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
-| Airbnb | Senior SE, Payments | ✅ | Not Started | Not Started | Not Started | 🔄 In Progress |
-| Soft Suave | AIML Engineer | ✅ | ✅ | 🔄 In Progress | Not Started | 🔄 In Progress |
+| _(Add companies here as you set them up)_ | — | — | — | — | — | — |
 
 ## Typical Workflow
 

@@ -7,17 +7,18 @@
 ## 1. Default Candidate Profile
 
 > This is the default profile. Each company's analysis doc may override these for different candidates/roles.
+> **Update this table** with your own details before starting prep.
 
 | Field | Details |
 |---|---|
-| **Current Role** | Senior Software Engineer |
-| **Target Role** | Staff Software Engineer |
-| **Experience** | 10+ years in Backend Engineering |
-| **Core Stack** | Java, Spring Boot, Microservices |
-| **Key Skills** | Java EE (JMS, JPA, Servlets), Spring MVC, Hibernate, REST APIs, Cloud-Native Architecture, Distributed Systems |
-| **Resume** | `Runit_Kumar_Raushan_Resume_Improved.md` (workspace root) |
+| **Current Role** | _(e.g., Senior Software Engineer)_ |
+| **Target Role** | _(e.g., Staff Software Engineer)_ |
+| **Experience** | _(e.g., 8+ years in Backend Engineering)_ |
+| **Core Stack** | _(e.g., Java, Spring Boot, Microservices)_ |
+| **Key Skills** | _(e.g., REST APIs, Distributed Systems, System Design)_ |
+| **Resume** | `Resume/<YourName>_Resume.md` (in `Resume/` folder) |
 
-> **Multi-user note:** Other users should update the resume path and profile in their company's analysis doc. This default profile is not mandatory — the company-setup skill will ask for role details.
+> **Multi-user note:** Other users should update this table and the resume path. This default profile is not mandatory — the company-setup skill will ask for role details.
 
 ---
 
@@ -50,9 +51,9 @@ See [WORKSPACE.md § Prep Tracker](../WORKSPACE.md#8-prep-tracker) for the unifi
 
 ## 4. Resume
 
-Base resume: `Runit_Kumar_Raushan_Resume_Improved.md` (root of workspace) — used for initial analysis, never modified by skills.
+Base resume: `Resume/<YourName>_Resume.md` (in `Resume/` folder) — used for initial analysis, never modified by skills.
 Company-specific resumes: `Companies/<Company>/Resume-<Company>.md` — tailored versions created during company setup.
 
 ---
 
-_Last Updated: 11 March 2026_
+_Last Updated: 14 March 2026_
